@@ -1,0 +1,223 @@
+/* Importing a professional and interesting font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Raleway', sans-serif; /* Updated font */
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Pure black background */
+    color: #ffffff; /* White text for contrast */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Stylish Headers */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 10px;
+    color: #ffffff; /* White color for headings */
+    font-weight: 700; /* Bold font weight */
+    text-align: center;
+    letter-spacing: 2px; /* Added letter spacing for style */
+    text-transform: uppercase; /* Professional uppercase headings */
+    background: none;
+    transition: color 0.3s ease;
+}
+
+h3 {
+    font-size: 2em;
+    margin-bottom: 20px; /* Spacing below headers */
+    animation: fadeIn 1s ease; /* Smooth fade-in effect */
+}
+
+/* Ordered List Styles */
+ol {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #1a001a; /* Darker background for ordered lists */
+    border-radius: 8px;
+    list-style-type: decimal;
+    transition: background-color 0.3s ease;
+}
+
+li {
+    padding: 8px 0;
+    font-size: 1.1em;
+    color: #ffffff; /* White text for list items */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #4b0082; /* Dark purple */
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #330066; /* Darker purple on hover */
+    color: #e0e0e0; /* Slightly lighter hover text */
+}
+
+/* Form Container Styling */
+.form-container {
+    background-color: #2e0854; /* Dark purple background */
+    padding: 30px;
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 8px;
+    animation: slideDown 1s ease; /* Smooth slide-in effect */
+}
+
+/* Input Field Styling */
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="number"], 
+input[type="date"], 
+textarea, 
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #1a001a; /* Darker purple input field */
+    color: #ffffff; /* White text */
+    transition: border-color 0.3s ease;
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus, 
+input[type="number"]:focus, 
+input[type="date"]:focus, 
+textarea:focus, 
+select:focus {
+    border-color: #4b0082; /* Focus effect with dark purple */
+    outline: none;
+}
+
+/* Radio Button Styling */
+input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and label */
+}
+
+/* Button Styling */
+input[type="submit"], 
+input[type="reset"] {
+    background-color: #4b0082; /* Dark purple */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 10px 15px; /* Padding for buttons */
+}
+
+input[type="submit"]:hover, 
+input[type="reset"]:hover {
+    background-color: #330066; /* Darker purple on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Center buttons inside the form */
+.button-container {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Profile Information Styling */
+.profile-info {
+    text-align: left; /* Align text to the left for better readability */
+    background-color: #2e0854; /* Dark purple background */
+    padding: 20px; /* Reduced padding */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px auto; /* Center the card */
+    width: 60%; /* Adjusted width for a more compact look */
+    max-width: 600px; /* Maximum width for larger screens */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Profile Info Text */
+.profile-info b {
+    display: block; /* Each label on a new line */
+    margin: 10px 0; /* Spacing between labels */
+    font-size: 1.1em; /* Slightly larger font for emphasis */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+}
+
+table td {
+    padding: 10px;
+    color: #ffffff; /* White text */
+}
+
+/* Label Styling */
+label {
+    color: #ffffff; /* White label color */
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
+    
+    .profile-info {
+        width: 90%; /* Wider card on smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
